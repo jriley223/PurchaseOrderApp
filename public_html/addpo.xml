@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Header>
+        <Security xmlns="http://schemas.xmlsoap.org/ws/2002/04/secext">
+            <UsernameToken>
+                <Username></Username>
+                <Password></Password>
+            </UsernameToken>
+        </Security>
+        <SessionScenario xmlns="http://schemas.datastream.net/headers">terminate</SessionScenario>
+        <Organization xmlns="http://schemas.datastream.net/headers">ORGANIZATION</Organization>
+    </Header>
+    <Body>
+        <MP0414_AddPurchaseOrder_001 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" autoid="true" verb="Add" noun="PurchaseOrder" version="001" xmlns="http://schemas.datastream.net/MP_functions/MP0414_001">
+            <PurchaseOrder recordid="1" xmlns="http://schemas.datastream.net/MP_entities/PurchaseOrder_001">
+                <PURCHASEORDERID xmlns="http://schemas.datastream.net/MP_fields">
+                    <PURCHASEORDERCODE>0</PURCHASEORDERCODE>
+                    <ORGANIZATIONID entity="User">
+                        <ORGANIZATIONCODE>ORGCODE</ORGANIZATIONCODE>
+                        <DESCRIPTION>DESCRIPTION</DESCRIPTION>
+                    </ORGANIZATIONID>
+                    <DESCRIPTION>NEWPO</DESCRIPTION>
+                </PURCHASEORDERID>
+                <STATUS entity="User" xmlns="http://schemas.datastream.net/MP_fields">
+                    <STATUSCODE>U</STATUSCODE>
+                    <DESCRIPTION>UNFINSHED</DESCRIPTION>
+                </STATUS>
+                <POREVISION xmlns="http://schemas.datastream.net/MP_fields">1</POREVISION>
+                <STOREID xmlns="http://schemas.datastream.net/MP_fields">
+                    <STORECODE>STORE</STORECODE>
+                    <ORGANIZATIONID entity="Group">
+                        <ORGANIZATIONCODE>ORGANIZATION</ORGANIZATIONCODE>
+                    </ORGANIZATIONID>
+                </STOREID>
+                <DUEDATE qualifier="ACCOUNTING" xmlns="http://schemas.datastream.net/MP_fields">
+                    <YEAR xmlns="http://www.openapplications.org/oagis_fields">2015</YEAR>
+                    <MONTH xmlns="http://www.openapplications.org/oagis_fields">8</MONTH>
+                    <DAY xmlns="http://www.openapplications.org/oagis_fields">12</DAY>
+                    <HOUR xmlns="http://www.openapplications.org/oagis_fields">1</HOUR>
+                    <MINUTE xmlns="http://www.openapplications.org/oagis_fields">1</MINUTE>
+                    <SECOND xmlns="http://www.openapplications.org/oagis_fields">1</SECOND>
+                    <SUBSECOND xmlns="http://www.openapplications.org/oagis_fields">1</SUBSECOND>
+                    <TIMEZONE xmlns="http://www.openapplications.org/oagis_fields">PST</TIMEZONE>
+                </DUEDATE>
+                <SUPPLIERID xmlns="http://schemas.datastream.net/MP_fields">
+                    <SUPPLIERCODE>SUPPLIER</SUPPLIERCODE>
+                    <ORGANIZATIONID entity="Class">
+                        <ORGANIZATIONCODE>*</ORGANIZATIONCODE>
+                    </ORGANIZATIONID>
+                </SUPPLIERID>
+                <CURRENCYCODE xmlns="http://schemas.datastream.net/MP_fields">USD</CURRENCYCODE>
+                <EXCHANGE qualifier="ACTUAL" type="T" index="index1" xmlns="http://schemas.datastream.net/MP_fields">
+                    <VALUE xmlns="http://www.openapplications.org/oagis_fields">1</VALUE>
+                    <NUMOFDEC xmlns="http://www.openapplications.org/oagis_fields">1</NUMOFDEC>
+                    <SIGN xmlns="http://www.openapplications.org/oagis_fields">+</SIGN>
+                    <CURRENCY xmlns="http://www.openapplications.org/oagis_fields">USD</CURRENCY>
+                    <DRCR xmlns="http://www.openapplications.org/oagis_fields">C</DRCR>
+                </EXCHANGE>
+                <ORDERDATE qualifier="ACCOUNTING" xmlns="http://schemas.datastream.net/MP_fields">
+                    <YEAR xmlns="http://www.openapplications.org/oagis_fields">2015</YEAR>
+                    <MONTH xmlns="http://www.openapplications.org/oagis_fields">7</MONTH>
+                    <DAY xmlns="http://www.openapplications.org/oagis_fields">22</DAY>
+                    <HOUR xmlns="http://www.openapplications.org/oagis_fields">5</HOUR>
+                    <MINUTE xmlns="http://www.openapplications.org/oagis_fields">0</MINUTE>
+                    <SECOND xmlns="http://www.openapplications.org/oagis_fields">0</SECOND>
+                    <SUBSECOND xmlns="http://www.openapplications.org/oagis_fields">0</SUBSECOND>
+                    <TIMEZONE xmlns="http://www.openapplications.org/oagis_fields">PST</TIMEZONE>
+                </ORDERDATE>
+                <TYPE entity="User" xmlns="http://schemas.datastream.net/MP_fields">
+                    <TYPECODE>P</TYPECODE>
+                </TYPE>
+                <ORIGINATOR xmlns="http://schemas.datastream.net/MP_fields">
+                    <PERSONCODE>PERSON</PERSONCODE>
+                </ORIGINATOR>
+                <UserDefinedFields>
+                    <UDFCHAR03 xmlns="http://schemas.datastream.net/MP_fields">UDFCHAR031</UDFCHAR03>
+                    <UDFCHAR22 xmlns="http://schemas.datastream.net/MP_fields">UDFCHAR221</UDFCHAR22>  
+                    <UDFCHAR23 xmlns="http://schemas.datastream.net/MP_fields">UDFCHAR231</UDFCHAR23> 
+                    <UDFCHAR25 xmlns="http://schemas.datastream.net/MP_fields">UDFCHAR251</UDFCHAR25> 
+                    <UDFCHAR27 xmlns="http://schemas.datastream.net/MP_fields">UDFCHAR271</UDFCHAR27> 
+                    <UDFCHAR28 xmlns="http://schemas.datastream.net/MP_fields">UDFCHAR281</UDFCHAR28> 
+                    <UDFCHAR30 xmlns="http://schemas.datastream.net/MP_fields">UDFCHAR301</UDFCHAR30> 
+                    <UDFNUM02 qualifier="ACCEPTED" xmlns="http://schemas.datastream.net/MP_fields">
+                        <VALUE xmlns="http://www.openapplications.org/oagis_fields">1</VALUE> 
+                        <NUMOFDEC xmlns="http://www.openapplications.org/oagis_fields">6</NUMOFDEC> 
+                        <SIGN xmlns="http://www.openapplications.org/oagis_fields">+</SIGN> 
+                        <UOM xmlns="http://www.openapplications.org/oagis_fields">*</UOM> 
+                    </UDFNUM02>
+                    <UDFNUM05 qualifier="ACCEPTED" xmlns="http://schemas.datastream.net/MP_fields">
+                        <VALUE xmlns="http://www.openapplications.org/oagis_fields">1</VALUE> 
+                        <NUMOFDEC xmlns="http://www.openapplications.org/oagis_fields">2</NUMOFDEC> 
+                        <SIGN xmlns="http://www.openapplications.org/oagis_fields">+</SIGN> 
+                        <UOM xmlns="http://www.openapplications.org/oagis_fields">USD</UOM> 
+                    </UDFNUM05>
+                </UserDefinedFields>
+                <no_of_partlines>0</no_of_partlines>
+                <no_of_servicelines>0</no_of_servicelines>
+            </PurchaseOrder>
+        </MP0414_AddPurchaseOrder_001>
+    </Body>
+</Envelope>

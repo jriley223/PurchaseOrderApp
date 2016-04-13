@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+- <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    - <soapenv:Body>
+        - <ns1:MP0414_AddPurchaseOrder_001_Result xmlns:ns1="http://schemas.datastream.net/MP_results/MP0414_001">
+            - <ns1:ResultData>
+                - <ns2:PURCHASEORDERID xmlns:ns2="http://schemas.datastream.net/MP_fields">
+                    <ns2:PURCHASEORDERCODE>148947</ns2:PURCHASEORDERCODE> 
+                    - <ns2:ORGANIZATIONID>
+                        <ns2:ORGANIZATIONCODE>FARM</ns2:ORGANIZATIONCODE> 
+                    </ns2:ORGANIZATIONID>
+                    <ns2:DESCRIPTION>NEWPO</ns2:DESCRIPTION> 
+                </ns2:PURCHASEORDERID>
+            </ns1:ResultData>
+        </ns1:MP0414_AddPurchaseOrder_001_Result>
+        - <ns1:InformationAlert xmlns:ns1="http://schemas.datastream.net/MP_functions" functionid="MP0414" name="com.dstm.mp.businessprocess.GeneralResultInfoAlert">
+            <ns1:InfoCode>1</ns1:InfoCode> 
+            <ns1:Message>Purchase Order 148947 was successfully saved.</ns1:Message> 
+        </ns1:InformationAlert>
+    </soapenv:Body>
+</soapenv:Envelope>
